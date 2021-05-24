@@ -1,11 +1,8 @@
 import { CreateTaskDto } from './dto/create-task.dto';
-import { Task } from './task.model';
 import { TaskService } from './task.service';
 import { Body, Controller, Delete, Get, Param, Patch, Post, Query, UsePipes, ValidationPipe } from '@nestjs/common';
 import { v1 as uuid } from 'uuid';
-import { TaskStatusValidationPipe } from './pipes/task-status-validation.pipe';
-import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
-import { TaskStatus } from './task-status.enum';
+
 
 @Controller('task')
 export class TaskController {
